@@ -2,7 +2,7 @@
 // programación. 
 
 // Declara e inicializa la lista amigos
-let amigos = [];
+var amigos = [];     // Para que la variable amigos sea global se debe declarar como var
 
 
 // Esta función mostrará a los amigos que se han introducido hasta el momento
