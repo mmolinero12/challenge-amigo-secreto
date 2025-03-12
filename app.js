@@ -41,7 +41,7 @@ function agregarAmigo(){
 // Valida que la lista amigos no esté vacía, de lo contrario, se pedirá agregar un nombre.
 function sortearAmigo(){
     if (amigos.length > 0){
-        amiguinSecreto = amigos[Math.ceil(Math.random() * amigos.length)];
+        let amiguinSecreto = amigos[Math.floor(Math.random() * amigos.length)];   // Me había equivodado. Es incorrecto usar ceil. Me faltó el let
         let elementoHTML = document.getElementById('listaAmigos');  
         elementoHTML.innerHTML = 'La amiga secreta o el amigo secreto es: ' + amiguinSecreto;
     } else{
